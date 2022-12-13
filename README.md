@@ -1,2 +1,2 @@
 # common-project
-common-work for cursos-school
+common-work for cursor-school
