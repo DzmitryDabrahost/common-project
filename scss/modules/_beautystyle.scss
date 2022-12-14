@@ -8,18 +8,6 @@
         display: flex;
         gap: 174px;
 
-        &_baground {
-            margin-top: 324px;
-            margin-left: 146px;
-            width: 0;
-            height: 0;
-            border-bottom: 432px solid #F8EEEF; 
-	        border-left: 581px solid transparent;
-            border-left: 388px solid transparent;
-            position: fixed;
-
-        }
-
         &_image {
             width: 388px;
             height: 432px;
