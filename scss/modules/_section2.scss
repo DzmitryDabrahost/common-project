@@ -1,10 +1,10 @@
-.section2 {
+.beautystyle {
     max-width: 1440px;
     min-height: 999px;
     background: #FFFFFF;
 
     &_container {
-        max-width: 1440px;
+        width: 1440px;
         display: flex;
         gap: 174px;
 
@@ -87,8 +87,60 @@
                     }
                 }
             }
+
+            &_meaning {
+                width: 606px;
+                height: 106px;
+                display: grid;
+                grid-template: 45px 45px / 272px 272px;
+                column-gap: 69px;
+                row-gap: 21px;
+
+                &_progress  {
+                    width: 272px;
+                    position: relative;
+                }
+            }
         }
-
-
     }
+}
+
+img.image {
+    margin-right: 12px;
+    background-color: #191018;
+}
+
+.span1 {
+    position: absolute;
+    bottom: 15px;
+    right: 69px;
+}
+
+.span2 {
+    position: absolute;
+    bottom: 15px;
+    right: 112px;
+}
+
+.span3 {
+    position: absolute;
+    bottom: 15px;
+    right: 50px;
+}
+
+progress {
+    border-radius: 0;
+    border: 0;
+    width: 210px;
+    height: 8px;
+    background: #FB3F5C;
+}
+
+progress::-webkit-progress-bar {
+    background: #C4C4C4;
+
+}
+
+progress::-webkit-progress-value {
+    background: #FB3F5C;
 }
