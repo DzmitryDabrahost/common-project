@@ -1,3 +1,11 @@
+.wrapper {
+  display: flex;
+  max-width: 1280px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
 .container {
   max-width: 1440px;
   padding: 0 15px;
@@ -5,8 +13,10 @@
 }
 
 @font-face {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans";
   src: url(../fonts/NunitoSans-Regular.ttf);
+  font-family: "Nunito Sans-bold", sans-serif;
+  src: url(../fonts/NunitoSans-Bold.ttf);
   font-family: "Nova Mono", monospace;
   src: url(../fonts/NovaMono-Regular.ttf);
 }
@@ -17,10 +27,16 @@
   line-height: 50px;
 }
 
-.header-text {
+.header-menu li {
   font-family: "Nunito Sans", sans-serif;
   font-size: 24px;
   line-height: 33px;
+  font-weight: 400;
+}
+
+.header-menu ul a:hover {
+  font-family: "Nunito Sans-bold", sans-serif;
+  font-weight: bold;
 }
 
 .header {
@@ -43,26 +59,21 @@
   text-decoration: none;
   color: #F8EEEF;
 }
-.header-menu {
-  margin-left: 322px;
+.header-menu ul {
+  width: 750px;
+  display: flex;
   gap: 52px;
+  margin-left: 322px;
 }
-.header-text {
-  font-weight: 400;
-  list-style-type: none;
-  color: #F8EEEF;
-  text-decoration: none;
-}
-.header-text a {
+.header-menu ul a {
   text-decoration: none;
   color: #F8EEEF;
   position: relative;
 }
-.header-text a:hover {
-  font-weight: bold;
+.header-menu ul a:hover {
   color: white;
 }
-.header-text a::before {
+.header-menu ul a::before {
   content: "";
   bottom: 0;
   left: 0;
@@ -74,6 +85,10 @@
   transition: 0.2s;
   top: 35px;
 }
-.header-text a:hover::before {
+.header-menu ul a:hover::before {
   width: 30%;
+}
+.header-menu li {
+  font-weight: normal;
+  list-style-type: none;
 }/*# sourceMappingURL=style.css.map */

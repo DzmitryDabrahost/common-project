@@ -22,27 +22,19 @@
         }
     }
 
-    &-menu {
-        
-        margin-left: 322px;
+    &-menu ul {
+        width: 750px;
+        display: flex;
         gap: 52px;
-    }
-    &-text  {
-        @extend %ns;
-        font-weight: 400;
-        list-style-type: none;
-        color: #F8EEEF;
-        text-decoration: none;
-        
-
-        & a{
+        margin-left: 322px;
+        & a {
             text-decoration: none;
             color: #F8EEEF;
             position: relative;
 
-            
+
             &:hover {
-                font-weight: bold;
+                @extend %nsb;
                 color: white;
             }
 
@@ -64,4 +56,11 @@
             }
         }
     }
+    &-menu li {
+        @extend %ns;
+        font-weight:normal;
+        list-style-type: none;
+    }
+
+
 }
