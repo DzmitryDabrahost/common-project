@@ -1,0 +1,94 @@
+.section2 {
+    max-width: 1440px;
+    min-height: 999px;
+    background: #FFFFFF;
+
+    &_container {
+        max-width: 1440px;
+        display: flex;
+        gap: 174px;
+
+        &_baground {
+            margin-top: 324px;
+            margin-left: 146px;
+            width: 0;
+            height: 0;
+            border-bottom: 432px solid #F8EEEF; 
+	        border-left: 581px solid transparent;
+            border-left: 388px solid transparent;
+            position: fixed;
+
+        }
+
+        &_image {
+            width: 388px;
+            height: 432px;
+            border-radius: 4px;
+            margin-top: 324px;
+            margin-left: 146px;
+            position: relative;
+            background: linear-gradient(to bottom right, #FFFFFF 50%, #F8EEEF 50%)  ;
+
+            & img {
+                position: absolute;
+                bottom: 50px;
+                right: 49px;
+            }
+        }
+
+        &_contant {
+            margin-top: 222px;
+
+            & h2 {
+                width: 522px;
+                color: #191018;
+                font-family: 'Nunito';
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 65px;
+                text-transform: capitalize;
+                margin-bottom: 16px;
+            }
+
+            & p {
+                width: 597px;
+                color: #191018;
+                font-family: 'Nunito Sans';
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 33px;
+                margin-bottom: 48px;
+                text-transform: lowercase;
+                letter-spacing: 0.06em;
+
+            }
+
+            &_button {
+                display: flex;
+                gap: 36px;
+                margin-bottom: 64px;
+
+                &_1 {
+                    width: 223px;
+                    height: 65px;
+                    border-radius: 18px;
+                    background: #FFFFFF;
+                    color: #FB3F5C;
+                    border: 1px solid #FB3F5C;
+                    font-family: 'Nunito Sans';
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 27px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: #FB3F5C;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
