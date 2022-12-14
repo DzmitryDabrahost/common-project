@@ -1,0 +1,13 @@
+.container {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family:'Nunito Sans', sans-serif;
+    src: url(../fonts/NunitoSans-Regular.ttf);
+
+    font-family: 'Nova Mono', monospace;
+    src: url(../fonts/NovaMono-Regular.ttf);
+}

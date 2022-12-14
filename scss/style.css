@@ -1,1 +1,79 @@
-/*# sourceMappingURL=style.css.map */
+.container {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Nunito Sans", sans-serif;
+  src: url(../fonts/NunitoSans-Regular.ttf);
+  font-family: "Nova Mono", monospace;
+  src: url(../fonts/NovaMono-Regular.ttf);
+}
+.header-logo {
+  font-family: "Nova Mono", monospace;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.header-text {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.header {
+  width: 1440px;
+  height: 100px;
+  background: #FB3F5C;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+}
+.header_inner {
+  width: 1190px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 23px 128px 27px 126px;
+}
+.header-logo {
+  text-transform: uppercase;
+}
+.header-logo a {
+  text-decoration: none;
+  color: #F8EEEF;
+}
+.header-menu {
+  margin-left: 322px;
+  gap: 52px;
+}
+.header-text {
+  font-weight: 400;
+  list-style-type: none;
+  color: #F8EEEF;
+  text-decoration: none;
+}
+.header-text a {
+  text-decoration: none;
+  color: #F8EEEF;
+  position: relative;
+}
+.header-text a:hover {
+  font-weight: bold;
+  color: white;
+}
+.header-text a::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 6px;
+  background: #F8EEEF;
+  border-radius: 55px;
+  transition: 0.2s;
+  top: 35px;
+}
+.header-text a:hover::before {
+  width: 30%;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,67 @@
+.header {
+    width: 1440px;
+    height: 100px;
+    background: #FB3F5C;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+
+    &_inner {
+        width: 1190px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 23px 128px 27px 126px;
+    }
+
+    &-logo {
+        @extend %nmr;
+        text-transform: uppercase;
+
+        & a {
+            text-decoration: none;
+            color: #F8EEEF;
+        }
+    }
+
+    &-menu {
+        
+        margin-left: 322px;
+        gap: 52px;
+    }
+    &-text  {
+        @extend %ns;
+        font-weight: 400;
+        list-style-type: none;
+        color: #F8EEEF;
+        text-decoration: none;
+        
+
+        & a{
+            text-decoration: none;
+            color: #F8EEEF;
+            position: relative;
+
+            
+            &:hover {
+                font-weight: bold;
+                color: white;
+            }
+
+            &::before {
+                content: '';
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                width: 0;
+                height: 6px;
+                background: #F8EEEF;
+                border-radius: 55px;
+                transition: 0.2s;
+                top: 35px;
+            }
+
+            &:hover::before {
+                width: 30%;
+            }
+        }
+    }
+}
